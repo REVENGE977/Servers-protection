@@ -87,6 +87,7 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
         if (err) console.log(err.message);
     }); // الفا كودي
 });
+
 client.on('channelDelete', (u) => {
     u.guild.fetchAuditLogs().then( s => {
         var ss = s.entries.first();
